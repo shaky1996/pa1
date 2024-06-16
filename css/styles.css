@@ -1,0 +1,134 @@
+/* one font-family declaration */
+html {
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+/* Header start */
+/*  one element selector to style the HTML elements */
+header {
+    position: relative;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* absolute and relative positioning in at least one area of your web page */
+.absolute {
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+}
+
+/* one ID selector to format specific elements of a page */
+#flag {
+    width: 200px;
+    border-radius: 30%;
+}
+/* Header end */
+
+/* Nav start */
+#nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav li a {
+    display: block;
+    color: #4a525b;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/*  a :hover pseudo-class to create a rollover effect for navigation buttons */
+#nav li a:hover:not(.active) {
+    background-color: #86bbf2;
+}
+
+#nav .active {
+    background-color: #d6e19b;
+}
+
+/* Nav end */
+
+/* Main start */
+main {
+    margin-top: 10px;
+    padding: 0 30px;
+    display: grid;
+    grid-template-columns: 2fr 0.5fr;
+    
+}
+
+/*  a float property to position at least one HTML element to the side of another in your web page */
+#main_pic {
+    width: 400px;
+    float: left;
+    margin-right: 30px;
+}
+
+ table {
+     border-collapse: collapse;
+     margin-top: 20px;
+ }
+
+ th,
+ td {
+     border: 1px solid black;
+     padding: 8px;
+     text-align: center;
+ }
+
+ .city_ul  li {
+    margin-top: 10px;
+ }
+
+
+/* Main end */
+
+/* Aside */
+
+aside {
+    border-left: 2px solid;
+    padding-left: 10px;
+}
+
+/* one class selector that is used at least two times to style HTML elements */
+.facts_ol {
+    display: flex;
+    flex-direction: column;
+}
+
+.facts_ol li {
+    margin-top: 20px;
+}
+
+/* Form */
+#form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#emailMatchMessage {
+    color: red;
+    display: none;
+}

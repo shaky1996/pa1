@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <!-- a title in the head of each document that describes the web page’s individual topic -->
+        <title>Contact Us</title>
+        <link
+            rel="stylesheet"
+            href="/css/styles.css"
+        />
+    </head>
+    <body>
+        <!-- Header -->
+        <header>
+            <!-- a relevant image, including alternative text for the image -->
+            <img
+                id="flag"
+                src="/images/Flag_of_Pennsylvania.png"
+                alt="Flag of Pennsylvania"
+            />
+            <!-- a header containing introductory content (pertaining to the document as a whole or a particular section of a document) -->
+            <h1>Contact Us</h1>
+        </header>
+        <!-- Nav -->
+        <!-- a consistent menu that allows the user to navigate to any other page on the site -->
+        <!-- a nav to place the links to navigate throughout the site -->
+        <nav>
+            <ul id="nav">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li><a href="harrisburg.html">Harrisburg</a></li>
+                <li><a href="philadelphia.html">Philadelphia</a></li>
+                <li><a href="lansdale.html">Lansdale</a></li>
+                <li>
+                    <a
+                        class="active"
+                        href="contact.html"
+                        >Contact Us</a
+                    >
+                </li>
+            </ul>
+        </nav>
+        <!-- Main -->
+        <!-- a section to display the main content of the page -->
+        <!-- Include text fields for the user’s first name, the user’s last name, and the user’s email address, as well as a confirmation field for the email address for verification purposes and a text box that allows the user to ask a question. -->
+        <main id="form">
+            <form id="contactForm">
+                <label for="firstName">First Name:</label>
+                <input
+                    type="text"
+                    id="firstName"
+                    name="firstName"
+                    placeholder="Enter your first name"
+                    required
+                /><br /><br />
+
+                <label for="lastName">Last Name:</label>
+                <input
+                    type="text"
+                    id="lastName"
+                    name="lastName"
+                    placeholder="Enter your last name"
+                    required
+                /><br /><br />
+
+                <label for="email">Email:</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email address"
+                    required
+                /><br /><br />
+
+                <label for="confirmEmail">Confirm Email:</label>
+                <input
+                    type="email"
+                    id="confirmEmail"
+                    name="confirmEmail"
+                    placeholder="Confirm your email address"
+                    required
+                /><br /><br />
+
+                <label for="question">Your Question:</label><br />
+                <textarea
+                    id="question"
+                    name="question"
+                    placeholder="Ask your question here"
+                    rows="4"
+                    cols="50"
+                    required
+                ></textarea
+                ><br /><br />
+
+                <button type="submit">Submit</button>
+            </form>
+        </main>
+        <!--  Include JavaScript code that verifies the email fields match when a user enters a second email address. -->
+        <script>
+            document
+                .getElementById('contactForm')
+                .addEventListener('submit', function (event) {
+                    const email = document.getElementById('email').value;
+                    const confirmEmail =
+                        document.getElementById('confirmEmail').value;
+
+                    if (email !== confirmEmail) {
+                        alert('Email addresses do not match.');
+                        event.preventDefault();
+                    }
+                });
+        </script>
+    </body>
+</html>
