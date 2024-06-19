@@ -67,8 +67,8 @@ header {
 
 /* Nav end */
 
-/* Main start */
-main {
+/* Main section start */
+section {
     margin-top: 10px;
     padding: 0 30px;
     display: grid;
@@ -100,7 +100,7 @@ main {
  }
 
 
-/* Main end */
+/* Main section end */
 
 /* Aside */
 
